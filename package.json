@@ -1,0 +1,34 @@
+{
+  "name": "base-template-version-example",
+  "version": "0.0.0",
+  "description": "Template to show an example of npm version setup",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint index.js",
+    "pretest": "npm install",
+    "test": "npm run eslint",
+    "preversion": "npm run test",
+    "version": "",
+    "postversion": "git push && git push --tags && npm publish"
+  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamishrouse/base-template-version-example.git"
+  },
+  "keywords": [
+    "npm",
+    "version",
+    "template",
+    "example",
+    "tutorial"
+  ],
+  "author": "Hamish Howley-Rouse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hamishrouse/base-template-version-example/issues"
+  },
+  "homepage": "https://github.com/hamishrouse/base-template-version-example#readme",
+  "devDependencies": {
+    "eslint": "^4.8.0"
+  }
+}
